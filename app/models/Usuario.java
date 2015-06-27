@@ -21,17 +21,20 @@ public class Usuario {
     @Column
     private String sobrenome;
     @Column
-    private int nacionalidade;
+    private long nacionalidade;
     @Column
     private String email;
     @Column
     private int tipo;
+    @Column
+    private boolean isColaborador;
 
     public Usuario(){
 
     }
 
-    public Usuario(String login, String senha, String nome, String sobrenome, int nacionalidade, String email, int tipo) {
+    public Usuario(String login, String senha, String nome, String sobrenome, long nacionalidade, String email, int tipo,
+                   boolean isColaborador) {
         this.login = login;
         this.senha = senha;
         this.nome = nome;
@@ -39,6 +42,15 @@ public class Usuario {
         this.nacionalidade = nacionalidade;
         this.email = email;
         this.tipo = tipo;
+        this.isColaborador = isColaborador;
+    }
+
+    public boolean isColaborador() {
+        return isColaborador;
+    }
+
+    public void setColaborador(boolean isColaborador) {
+        this.isColaborador = isColaborador;
     }
 
     public int getTipo() {
@@ -113,11 +125,11 @@ public class Usuario {
         this.sobrenome = sobrenome;
     }
 
-    public int getNacionalidade() {
+    public long getNacionalidade() {
         return nacionalidade;
     }
 
-    public void setNacionalidade(int nacionalidade) {
+    public void setNacionalidade(long nacionalidade) {
         this.nacionalidade = nacionalidade;
     }
 

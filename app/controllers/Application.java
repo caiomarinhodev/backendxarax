@@ -90,9 +90,9 @@ public class Application extends Controller {
         String sobrenome = r.get("sobrenome");
         String login = r.get("login");
         String senha = r.get("senha");
-        String nacionalidade = r.get("nacionalidade");
+        int nacionalidade = Integer.parseInt(r.get("nacionalidade"));
         String email = r.get("email");
-        SGDB.addUsuario(login,senha,nome,sobrenome,2,email,1);
+        SGDB.addUsuario(login,senha,nome,sobrenome,nacionalidade,email,1, false);
         session().clear();
         session().put("email", email);
         return index();

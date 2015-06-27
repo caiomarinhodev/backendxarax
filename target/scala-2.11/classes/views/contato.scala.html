@@ -245,9 +245,8 @@
     <script>
         $(document ).ready(function(){
             var v = $('#variavel' ).val();
-            if(v!=0){
-                $('#myModal').on('shown.bs.modal', function () {
-                });
+            if(v==1){
+                $("#myModal").modal('show');
             }
         });
     </script>
