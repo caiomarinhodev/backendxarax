@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Caio/Downloads/activator-1.2.10/demic/conf/routes
-// @HASH:ed7bc1eb0aa1669f75b2dd5d859eb0bd38eb0943
-// @DATE:Sat Jun 20 13:45:18 BRT 2015
+// @HASH:e721c58bea6a54882683417ca6936a60aaa1e3c4
+// @DATE:Mon Jun 29 13:11:21 BRT 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,15 +15,16 @@ import _root_.play.libs.F
 import Router.queryString
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -36,22 +37,22 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
 class ReverseAssets {
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
 def at(file:String): Call = {
    (file: @unchecked) match {
-// @LINE:26
+// @LINE:27
 case (file)  =>
   implicit val _rrc = new ReverseRouteContext(Map(("path", "/public/assets/")))
   Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -63,10 +64,11 @@ case (file)  =>
 }
                           
 
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -87,7 +89,7 @@ def renderProjeto(): Call = {
 }
                         
 
-// @LINE:21
+// @LINE:22
 def addPost(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "addpost")
@@ -101,7 +103,7 @@ def renderContato(): Call = {
 }
                         
 
-// @LINE:20
+// @LINE:21
 def enviarContato(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "enviarcontato")
@@ -119,6 +121,13 @@ def renderAbout(): Call = {
 def renderRegistro(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "registrar")
+}
+                        
+
+// @LINE:16
+def removeUsuario(id:Long): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "remove/usuario/" + implicitly[PathBindable[Long]].unbind("id", id))
 }
                         
 
@@ -150,7 +159,7 @@ def removePost(id:Long): Call = {
 }
                         
 
-// @LINE:19
+// @LINE:20
 def addUsuario(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "addusuario")
@@ -171,7 +180,7 @@ def index(): Call = {
 }
                         
 
-// @LINE:18
+// @LINE:19
 def login(): Call = {
    import ReverseRouteContext.empty
    Call("POST", _prefix + { _defaultPrefix } + "entrar")
@@ -184,15 +193,16 @@ def login(): Call = {
                   
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -206,19 +216,19 @@ def login(): Call = {
 package controllers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
 class ReverseAssets {
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -246,10 +256,11 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -274,7 +285,7 @@ def renderProjeto : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:21
+// @LINE:22
 def addPost : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.addPost",
    """
@@ -296,7 +307,7 @@ def renderContato : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:20
+// @LINE:21
 def enviarContato : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.enviarContato",
    """
@@ -324,6 +335,17 @@ def renderRegistro : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "registrar"})
+      }
+   """
+)
+                        
+
+// @LINE:16
+def removeUsuario : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.removeUsuario",
+   """
+      function(id) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "remove/usuario/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("id", id)})
       }
    """
 )
@@ -373,7 +395,7 @@ def removePost : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:19
+// @LINE:20
 def addUsuario : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.addUsuario",
    """
@@ -406,7 +428,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:18
+// @LINE:19
 def login : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.login",
    """
@@ -423,15 +445,16 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -445,15 +468,15 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
+// @LINE:31
 // @LINE:30
 // @LINE:29
 // @LINE:28
 // @LINE:27
-// @LINE:26
 class ReverseAssets {
 
 
-// @LINE:26
+// @LINE:27
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -462,10 +485,11 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:22
 // @LINE:21
 // @LINE:20
 // @LINE:19
-// @LINE:18
+// @LINE:16
 // @LINE:15
 // @LINE:14
 // @LINE:13
@@ -485,7 +509,7 @@ def renderProjeto(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:21
+// @LINE:22
 def addPost(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.addPost(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "addPost", Seq(), "POST", """""", _prefix + """addpost""")
 )
@@ -497,7 +521,7 @@ def renderContato(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:20
+// @LINE:21
 def enviarContato(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.enviarContato(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "enviarContato", Seq(), "POST", """""", _prefix + """enviarcontato""")
 )
@@ -512,6 +536,12 @@ def renderAbout(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:7
 def renderRegistro(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.renderRegistro(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "renderRegistro", Seq(), "GET", """""", _prefix + """registrar""")
+)
+                      
+
+// @LINE:16
+def removeUsuario(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.removeUsuario(id), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "removeUsuario", Seq(classOf[Long]), "GET", """""", _prefix + """remove/usuario/$id<[^/]+>""")
 )
                       
 
@@ -539,7 +569,7 @@ def removePost(id:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRe
 )
                       
 
-// @LINE:19
+// @LINE:20
 def addUsuario(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.addUsuario(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "addUsuario", Seq(), "POST", """""", _prefix + """addusuario""")
 )
@@ -557,7 +587,7 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 )
                       
 
-// @LINE:18
+// @LINE:19
 def login(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.login(), HandlerDef(this.getClass.getClassLoader, "", "controllers.Application", "login", Seq(), "POST", """""", _prefix + """entrar""")
 )

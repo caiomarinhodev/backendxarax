@@ -3,29 +3,30 @@
 # ~~~~
 
 # Home page
-GET         /                                controllers.Application.index()
-GET         /registrar                       controllers.Application.renderRegistro()
-GET         /logout                          controllers.Application.logout()
-GET         /projeto                         controllers.Application.renderProjeto()
-GET         /about                           controllers.Application.renderAbout()
-GET         /contato                         controllers.Application.renderContato()
-GET         /admin                           controllers.Application.renderAdmin()
-GET         /mural                           controllers.Application.renderMural()
-GET         /remove/post/:id                 controllers.Application.removePost(id: Long)
-GET         /remove/mensagem/:id             controllers.Application.removeMensagem(id: Long)
+GET         /                                    controllers.Application.index()
+GET         /registrar                           controllers.Application.renderRegistro()
+GET         /logout                              controllers.Application.logout()
+GET         /projeto                             controllers.Application.renderProjeto()
+GET         /about                               controllers.Application.renderAbout()
+GET         /contato                             controllers.Application.renderContato()
+GET         /admin                               controllers.Application.renderAdmin()
+GET         /mural                               controllers.Application.renderMural()
+GET         /remove/post/:id                     controllers.Application.removePost(id: Long)
+GET         /remove/mensagem/:id                 controllers.Application.removeMensagem(id: Long)
+GET         /remove/usuario/:id                  controllers.Application.removeUsuario(id: Long)
 
 
-POST        /entrar                          controllers.Application.login()
-POST        /addusuario                      controllers.Application.addUsuario()
-POST        /enviarcontato                   controllers.Application.enviarContato()
-POST        /addpost                         controllers.Application.addPost()
+POST        /entrar                              controllers.Application.login()
+POST        /addusuario                          controllers.Application.addUsuario()
+POST        /enviarcontato                       controllers.Application.enviarContato()
+POST        /addpost                             controllers.Application.addPost()
 
 
 
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file                    controllers.Assets.at(path="/public/assets/", file)
-GET         /remove/assets/*file             controllers.Assets.at(path="/public/assets/", file)
-GET         /remove/post/assets/*file        controllers.Assets.at(path="/public/assets/", file)
+GET         /assets/*file                        controllers.Assets.at(path="/public/assets/", file)
+GET         /remove/assets/*file                 controllers.Assets.at(path="/public/assets/", file)
+GET         /remove/post/assets/*file            controllers.Assets.at(path="/public/assets/", file)
 GET         /remove/mensagem/assets/*file        controllers.Assets.at(path="/public/assets/", file)
-GET         /add/assets/*file                controllers.Assets.at(path="/public/assets/", file)
+GET         /add/assets/*file                    controllers.Assets.at(path="/public/assets/", file)
 

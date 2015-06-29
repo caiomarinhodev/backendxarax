@@ -40,6 +40,23 @@ Seq[Any](format.raw/*1.20*/("""
 
     <title>Projeto Xarax - Registro</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
@@ -114,15 +131,15 @@ Seq[Any](format.raw/*1.20*/("""
                     </li>
                     <li class="active"><a href="/registrar">Registrar</a></li>
                     <li class="divider-vertical"></li>
-                    """),_display_(/*89.22*/if(usuario!=null)/*89.39*/{_display_(Seq[Any](format.raw/*89.40*/("""
-                        """),format.raw/*90.25*/("""<li class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*91.95*/usuario/*91.102*/.getNome),format.raw/*91.110*/("""</a>
-                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                    """),_display_(/*106.22*/if(usuario!=null)/*106.39*/{_display_(Seq[Any](format.raw/*106.40*/("""
+                        """),format.raw/*107.25*/("""<li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*108.95*/usuario/*108.102*/.getNome),format.raw/*108.110*/("""</a>
+                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                                 <a class="btn btn-block btn-primary" href="/logout">Sair</a>
                             </div>
                         </li>
-                    """)))}/*96.22*/else/*96.26*/{_display_(Seq[Any](format.raw/*96.27*/("""
-                        """),format.raw/*97.25*/("""<li class="dropdown">
+                    """)))}/*113.22*/else/*113.26*/{_display_(Seq[Any](format.raw/*113.27*/("""
+                        """),format.raw/*114.25*/("""<li class="dropdown">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong
                             class="caret"></strong></a>
                             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -142,8 +159,8 @@ Seq[Any](format.raw/*1.20*/("""
                                 </form>
                             </div>
                         </li>
-                    """)))}),format.raw/*117.22*/("""
-                """),format.raw/*118.17*/("""</ul>
+                    """)))}),format.raw/*134.22*/("""
+                """),format.raw/*135.17*/("""</ul>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -174,10 +191,10 @@ Seq[Any](format.raw/*1.20*/("""
 
                                 <div class="form-group">
                                     <select class="form-control" name="nacionalidade">
-                                        """),_display_(/*149.42*/for(na <- SGDB.getAllNacionalidades) yield /*149.78*/{_display_(Seq[Any](format.raw/*149.79*/("""
-                                            """),format.raw/*150.45*/("""<option value=""""),_display_(/*150.61*/na/*150.63*/.getId),format.raw/*150.69*/("""">"""),_display_(/*150.72*/na/*150.74*/.getNome),format.raw/*150.82*/("""</option>
-                                        """)))}),format.raw/*151.42*/("""
-                                    """),format.raw/*152.37*/("""</select>
+                                        """),_display_(/*166.42*/for(na <- SGDB.getAllNacionalidades) yield /*166.78*/{_display_(Seq[Any](format.raw/*166.79*/("""
+                                            """),format.raw/*167.45*/("""<option value=""""),_display_(/*167.61*/na/*167.63*/.getId),format.raw/*167.69*/("""">"""),_display_(/*167.72*/na/*167.74*/.getNome),format.raw/*167.82*/("""</option>
+                                        """)))}),format.raw/*168.42*/("""
+                                    """),format.raw/*169.37*/("""</select>
                                 </div>
 
                                 <div class="form-group">
@@ -252,20 +269,20 @@ Seq[Any](format.raw/*1.20*/("""
 
 
     <style>
-        #container1 """),format.raw/*227.21*/("""{"""),format.raw/*227.22*/("""
-            """),format.raw/*228.13*/("""background-color: #e2dada;
-        """),format.raw/*229.9*/("""}"""),format.raw/*229.10*/("""
+        #container1 """),format.raw/*244.21*/("""{"""),format.raw/*244.22*/("""
+            """),format.raw/*245.13*/("""background-color: #e2dada;
+        """),format.raw/*246.9*/("""}"""),format.raw/*246.10*/("""
 
-        """),format.raw/*231.9*/(""".centered-form """),format.raw/*231.24*/("""{"""),format.raw/*231.25*/("""
-            """),format.raw/*232.13*/("""margin-top: 120px;
+        """),format.raw/*248.9*/(""".centered-form """),format.raw/*248.24*/("""{"""),format.raw/*248.25*/("""
+            """),format.raw/*249.13*/("""margin-top: 120px;
             margin-bottom: 120px;
-        """),format.raw/*234.9*/("""}"""),format.raw/*234.10*/("""
+        """),format.raw/*251.9*/("""}"""),format.raw/*251.10*/("""
 
-        """),format.raw/*236.9*/(""".centered-form .panel """),format.raw/*236.31*/("""{"""),format.raw/*236.32*/("""
-            """),format.raw/*237.13*/("""background: rgba(255, 255, 255, 0.8);
+        """),format.raw/*253.9*/(""".centered-form .panel """),format.raw/*253.31*/("""{"""),format.raw/*253.32*/("""
+            """),format.raw/*254.13*/("""background: rgba(255, 255, 255, 0.8);
             box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
-        """),format.raw/*239.9*/("""}"""),format.raw/*239.10*/("""
-    """),format.raw/*240.5*/("""</style>
+        """),format.raw/*256.9*/("""}"""),format.raw/*256.10*/("""
+    """),format.raw/*257.5*/("""</style>
 
 </body>
 
@@ -282,11 +299,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 27 10:37:41 BRT 2015
+                  DATE: Mon Jun 29 13:45:22 BRT 2015
                   SOURCE: C:/Users/Caio/Downloads/activator-1.2.10/demic/app/views/registrar.scala.html
-                  HASH: b8963b9acd078dcb67d19b1a7c615d13500c37ea
-                  MATRIX: 728->1|834->19|862->21|4604->3736|4630->3753|4669->3754|4723->3780|4867->3897|4884->3904|4914->3912|5222->4201|5235->4205|5274->4206|5328->4232|7037->5909|7084->5927|8628->7443|8681->7479|8721->7480|8796->7526|8840->7542|8852->7544|8880->7550|8911->7553|8923->7555|8953->7563|9037->7615|9104->7653|12398->10918|12428->10919|12471->10933|12535->10969|12565->10970|12605->10982|12649->10997|12679->10998|12722->11012|12813->11075|12843->11076|12883->11088|12934->11110|12964->11111|13007->11125|13142->11232|13172->11233|13206->11239
-                  LINES: 26->1|29->1|30->2|117->89|117->89|117->89|118->90|119->91|119->91|119->91|124->96|124->96|124->96|125->97|145->117|146->118|177->149|177->149|177->149|178->150|178->150|178->150|178->150|178->150|178->150|178->150|179->151|180->152|255->227|255->227|256->228|257->229|257->229|259->231|259->231|259->231|260->232|262->234|262->234|264->236|264->236|264->236|265->237|267->239|267->239|268->240
+                  HASH: 1f3f3cfe311575780c531dc22b8b149ebb39d059
+                  MATRIX: 728->1|834->19|862->21|6053->5184|6080->5201|6120->5202|6175->5228|6320->5345|6338->5352|6369->5360|6679->5650|6693->5654|6733->5655|6788->5681|8497->7358|8544->7376|10088->8892|10141->8928|10181->8929|10256->8975|10300->8991|10312->8993|10340->8999|10371->9002|10383->9004|10413->9012|10497->9064|10564->9102|13858->12367|13888->12368|13931->12382|13995->12418|14025->12419|14065->12431|14109->12446|14139->12447|14182->12461|14273->12524|14303->12525|14343->12537|14394->12559|14424->12560|14467->12574|14602->12681|14632->12682|14666->12688
+                  LINES: 26->1|29->1|30->2|134->106|134->106|134->106|135->107|136->108|136->108|136->108|141->113|141->113|141->113|142->114|162->134|163->135|194->166|194->166|194->166|195->167|195->167|195->167|195->167|195->167|195->167|195->167|196->168|197->169|272->244|272->244|273->245|274->246|274->246|276->248|276->248|276->248|277->249|279->251|279->251|281->253|281->253|281->253|282->254|284->256|284->256|285->257
                   -- GENERATED --
               */
           

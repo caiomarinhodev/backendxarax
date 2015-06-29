@@ -41,6 +41,23 @@ Seq[Any](format.raw/*1.20*/("""
 
     <title>Projeto Xarax</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
@@ -93,7 +110,7 @@ Seq[Any](format.raw/*1.20*/("""
                 </div>
                 <button type="submit" class="btn btn-default">Sign In</button>
             </form>-->
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right menus">
                 <li class="active">
                     <a href="#home">Home</a>
                 </li>
@@ -117,15 +134,15 @@ Seq[Any](format.raw/*1.20*/("""
                 </li>
                 <li><a href="/registrar">Registrar</a></li>
                 <li class="divider-vertical"></li>
-                """),_display_(/*92.18*/if(usuario!=null)/*92.35*/{_display_(Seq[Any](format.raw/*92.36*/("""
-                    """),format.raw/*93.21*/("""<li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*94.91*/usuario/*94.98*/.getNome),format.raw/*94.106*/("""</a>
-                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                """),_display_(/*109.18*/if(usuario!=null)/*109.35*/{_display_(Seq[Any](format.raw/*109.36*/("""
+                    """),format.raw/*110.21*/("""<li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*111.91*/usuario/*111.98*/.getNome),format.raw/*111.106*/("""</a>
+                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                             <a class="btn btn-block btn-primary" href="/logout">Sair</a>
                         </div>
                     </li>
-                """)))}/*99.18*/else/*99.22*/{_display_(Seq[Any](format.raw/*99.23*/("""
-                    """),format.raw/*100.21*/("""<li class="dropdown">
+                """)))}/*116.18*/else/*116.22*/{_display_(Seq[Any](format.raw/*116.23*/("""
+                    """),format.raw/*117.21*/("""<li class="dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong
                         class="caret"></strong></a>
                         <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -145,9 +162,9 @@ Seq[Any](format.raw/*1.20*/("""
                             </form>
                         </div>
                     </li>
-                """)))}),format.raw/*120.18*/("""
+                """)))}),format.raw/*137.18*/("""
 
-            """),format.raw/*122.13*/("""</ul>
+            """),format.raw/*139.13*/("""</ul>
 
         </div>
         <!-- /.navbar-collapse -->
@@ -175,7 +192,7 @@ Seq[Any](format.raw/*1.20*/("""
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
+                            <a href="https://www.facebook.com/pages/Projeto-Xarax/990915060941437?fref=ts" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
                                 <span class="network-name">Facebook</span>
                             </a>
                         </li>
@@ -427,7 +444,7 @@ Seq[Any](format.raw/*1.20*/("""
                             <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
+                        <a href="https://www.facebook.com/pages/Projeto-Xarax/990915060941437?fref=ts" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
                             <span class="network-name">Facebook</span></a>
                     </li>
                     <li>
@@ -478,108 +495,108 @@ Seq[Any](format.raw/*1.20*/("""
 <script src="/assets/js/jquery.js"></script>
 
 <script>
-    $(document).ready(function () """),format.raw/*453.35*/("""{"""),format.raw/*453.36*/("""
-        """),format.raw/*454.9*/("""var t, a = null;
-        $("ul.nav a").bind("click", function (n) """),format.raw/*455.50*/("""{"""),format.raw/*455.51*/("""
-            """),format.raw/*456.13*/("""var e = $(this);
-            t = e, null != a && a.parent().attr("class", "none"), t.parent().attr("class", "active"), $("html, body").stop().animate("""),format.raw/*457.134*/("""{"""),format.raw/*457.135*/("""scrollTop: $(t.attr("href")).position().top"""),format.raw/*457.178*/("""}"""),format.raw/*457.179*/(""", 1e3), a = e, n.preventDefault()
-        """),format.raw/*458.9*/("""}"""),format.raw/*458.10*/(""")
-    """),format.raw/*459.5*/("""}"""),format.raw/*459.6*/(""");
+    $(document).ready(function () """),format.raw/*470.35*/("""{"""),format.raw/*470.36*/("""
+        """),format.raw/*471.9*/("""var t, a = null;
+        $("ul.nav a").bind("click", function (n) """),format.raw/*472.50*/("""{"""),format.raw/*472.51*/("""
+            """),format.raw/*473.13*/("""var e = $(this);
+            t = e, null != a && a.parent().attr("class", "none"), t.parent().attr("class", "active"), $("html, body").stop().animate("""),format.raw/*474.134*/("""{"""),format.raw/*474.135*/("""scrollTop: $(t.attr("href")).position().top"""),format.raw/*474.178*/("""}"""),format.raw/*474.179*/(""", 1e3), a = e, n.preventDefault()
+        """),format.raw/*475.9*/("""}"""),format.raw/*475.10*/(""")
+    """),format.raw/*476.5*/("""}"""),format.raw/*476.6*/(""");
 </script>
 
 <script type="text/javascript">
-    function resetActive(event, percent, step) """),format.raw/*463.48*/("""{"""),format.raw/*463.49*/("""
-        """),format.raw/*464.9*/("""$(".progress-bar").css("width", percent + "%").attr("aria-valuenow", percent);
+    function resetActive(event, percent, step) """),format.raw/*480.48*/("""{"""),format.raw/*480.49*/("""
+        """),format.raw/*481.9*/("""$(".progress-bar").css("width", percent + "%").attr("aria-valuenow", percent);
         $(".progress-completed").text(percent + "%");
 
-        $("div").each(function () """),format.raw/*467.35*/("""{"""),format.raw/*467.36*/("""
-            """),format.raw/*468.13*/("""if ($(this).hasClass("activestep")) """),format.raw/*468.49*/("""{"""),format.raw/*468.50*/("""
-                """),format.raw/*469.17*/("""$(this).removeClass("activestep");
-            """),format.raw/*470.13*/("""}"""),format.raw/*470.14*/("""
-        """),format.raw/*471.9*/("""}"""),format.raw/*471.10*/(""");
+        $("div").each(function () """),format.raw/*484.35*/("""{"""),format.raw/*484.36*/("""
+            """),format.raw/*485.13*/("""if ($(this).hasClass("activestep")) """),format.raw/*485.49*/("""{"""),format.raw/*485.50*/("""
+                """),format.raw/*486.17*/("""$(this).removeClass("activestep");
+            """),format.raw/*487.13*/("""}"""),format.raw/*487.14*/("""
+        """),format.raw/*488.9*/("""}"""),format.raw/*488.10*/(""");
 
-        if (event.target.className == "col-md-2") """),format.raw/*473.51*/("""{"""),format.raw/*473.52*/("""
-            """),format.raw/*474.13*/("""$(event.target).addClass("activestep");
-        """),format.raw/*475.9*/("""}"""),format.raw/*475.10*/("""
-        """),format.raw/*476.9*/("""else """),format.raw/*476.14*/("""{"""),format.raw/*476.15*/("""
-            """),format.raw/*477.13*/("""$(event.target.parentNode).addClass("activestep");
-        """),format.raw/*478.9*/("""}"""),format.raw/*478.10*/("""
+        if (event.target.className == "col-md-2") """),format.raw/*490.51*/("""{"""),format.raw/*490.52*/("""
+            """),format.raw/*491.13*/("""$(event.target).addClass("activestep");
+        """),format.raw/*492.9*/("""}"""),format.raw/*492.10*/("""
+        """),format.raw/*493.9*/("""else """),format.raw/*493.14*/("""{"""),format.raw/*493.15*/("""
+            """),format.raw/*494.13*/("""$(event.target.parentNode).addClass("activestep");
+        """),format.raw/*495.9*/("""}"""),format.raw/*495.10*/("""
 
-        """),format.raw/*480.9*/("""hideSteps();
+        """),format.raw/*497.9*/("""hideSteps();
         showCurrentStepInfo(step);
-    """),format.raw/*482.5*/("""}"""),format.raw/*482.6*/("""
+    """),format.raw/*499.5*/("""}"""),format.raw/*499.6*/("""
 
-    """),format.raw/*484.5*/("""function hideSteps() """),format.raw/*484.26*/("""{"""),format.raw/*484.27*/("""
-        """),format.raw/*485.9*/("""$("div").each(function () """),format.raw/*485.35*/("""{"""),format.raw/*485.36*/("""
-            """),format.raw/*486.13*/("""if ($(this).hasClass("activeStepInfo")) """),format.raw/*486.53*/("""{"""),format.raw/*486.54*/("""
-                """),format.raw/*487.17*/("""$(this).removeClass("activeStepInfo");
+    """),format.raw/*501.5*/("""function hideSteps() """),format.raw/*501.26*/("""{"""),format.raw/*501.27*/("""
+        """),format.raw/*502.9*/("""$("div").each(function () """),format.raw/*502.35*/("""{"""),format.raw/*502.36*/("""
+            """),format.raw/*503.13*/("""if ($(this).hasClass("activeStepInfo")) """),format.raw/*503.53*/("""{"""),format.raw/*503.54*/("""
+                """),format.raw/*504.17*/("""$(this).removeClass("activeStepInfo");
                 $(this).addClass("hiddenStepInfo");
-            """),format.raw/*489.13*/("""}"""),format.raw/*489.14*/("""
-        """),format.raw/*490.9*/("""}"""),format.raw/*490.10*/(""");
-    """),format.raw/*491.5*/("""}"""),format.raw/*491.6*/("""
+            """),format.raw/*506.13*/("""}"""),format.raw/*506.14*/("""
+        """),format.raw/*507.9*/("""}"""),format.raw/*507.10*/(""");
+    """),format.raw/*508.5*/("""}"""),format.raw/*508.6*/("""
 
-    """),format.raw/*493.5*/("""function showCurrentStepInfo(step) """),format.raw/*493.40*/("""{"""),format.raw/*493.41*/("""
-        """),format.raw/*494.9*/("""var id = "#" + step;
+    """),format.raw/*510.5*/("""function showCurrentStepInfo(step) """),format.raw/*510.40*/("""{"""),format.raw/*510.41*/("""
+        """),format.raw/*511.9*/("""var id = "#" + step;
         $(id).addClass("activeStepInfo");
-    """),format.raw/*496.5*/("""}"""),format.raw/*496.6*/("""
-"""),format.raw/*497.1*/("""</script>
+    """),format.raw/*513.5*/("""}"""),format.raw/*513.6*/("""
+"""),format.raw/*514.1*/("""</script>
 
 <script type="text/javascript">
 
-    $(document).ready(function () """),format.raw/*501.35*/("""{"""),format.raw/*501.36*/("""
-        """),format.raw/*502.9*/("""//Handles menu drop down
-        $('.dropdown-menu').find('form').click(function (e) """),format.raw/*503.61*/("""{"""),format.raw/*503.62*/("""
-            """),format.raw/*504.13*/("""e.stopPropagation();
-        """),format.raw/*505.9*/("""}"""),format.raw/*505.10*/(""");
-    """),format.raw/*506.5*/("""}"""),format.raw/*506.6*/(""");
+    $(document).ready(function () """),format.raw/*518.35*/("""{"""),format.raw/*518.36*/("""
+        """),format.raw/*519.9*/("""//Handles menu drop down
+        $('.dropdown-menu').find('form').click(function (e) """),format.raw/*520.61*/("""{"""),format.raw/*520.62*/("""
+            """),format.raw/*521.13*/("""e.stopPropagation();
+        """),format.raw/*522.9*/("""}"""),format.raw/*522.10*/(""");
+    """),format.raw/*523.5*/("""}"""),format.raw/*523.6*/(""");
 
-    $(document).ready(function () """),format.raw/*508.35*/("""{"""),format.raw/*508.36*/("""
+    $(document).ready(function () """),format.raw/*525.35*/("""{"""),format.raw/*525.36*/("""
 
-        """),format.raw/*510.9*/("""if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) """),format.raw/*510.105*/("""{"""),format.raw/*510.106*/("""
-            """),format.raw/*511.13*/("""console.log("This is mobile device!");
+        """),format.raw/*527.9*/("""if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) """),format.raw/*527.105*/("""{"""),format.raw/*527.106*/("""
+            """),format.raw/*528.13*/("""console.log("This is mobile device!");
             $('#participar').css('display', 'none');
             $('#video').css('display', 'none');
             $('.banner').css('background', 'url(assets/img/troncos_c.png)');
-            $(window).load(function () """),format.raw/*515.40*/("""{"""),format.raw/*515.41*/("""
-                """),format.raw/*516.17*/("""var i = 0;
+            $(window).load(function () """),format.raw/*532.40*/("""{"""),format.raw/*532.41*/("""
+                """),format.raw/*533.17*/("""var i = 0;
                 var images = ['assets/img/vitoria.jpg', 'assets/img/troncos_c.png', 'assets/img/54bis_c.png',
                 'assets/img/mata_c.png', 'assets/img/rio_c.png'];
                 var image = $('.intro-header');
                 //Initial Background image setup
                 image.css('background', 'url(assets/img/rio_c.png)');
                 //Change image at regular intervals
-                setInterval(function () """),format.raw/*523.41*/("""{"""),format.raw/*523.42*/("""
-                    """),format.raw/*524.21*/("""image.fadeOut(1000, function () """),format.raw/*524.53*/("""{"""),format.raw/*524.54*/("""
-                        """),format.raw/*525.25*/("""image.css('background', 'url(' + images [i++] + ')');
+                setInterval(function () """),format.raw/*540.41*/("""{"""),format.raw/*540.42*/("""
+                    """),format.raw/*541.21*/("""image.fadeOut(1000, function () """),format.raw/*541.53*/("""{"""),format.raw/*541.54*/("""
+                        """),format.raw/*542.25*/("""image.css('background', 'url(' + images [i++] + ')');
                         image.fadeIn(1000);
-                    """),format.raw/*527.21*/("""}"""),format.raw/*527.22*/(""");
+                    """),format.raw/*544.21*/("""}"""),format.raw/*544.22*/(""");
                     if (i == images.length)
                         i = 0;
-                """),format.raw/*530.17*/("""}"""),format.raw/*530.18*/(""", 10000);
-            """),format.raw/*531.13*/("""}"""),format.raw/*531.14*/(""");
-        """),format.raw/*532.9*/("""}"""),format.raw/*532.10*/(""" """),format.raw/*532.11*/("""else """),format.raw/*532.16*/("""{"""),format.raw/*532.17*/("""
-            """),format.raw/*533.13*/("""console.log("Isn't mobile device!");
-            $(window).load(function () """),format.raw/*534.40*/("""{"""),format.raw/*534.41*/("""
-                """),format.raw/*535.17*/("""var i = 0;
+                """),format.raw/*547.17*/("""}"""),format.raw/*547.18*/(""", 10000);
+            """),format.raw/*548.13*/("""}"""),format.raw/*548.14*/(""");
+        """),format.raw/*549.9*/("""}"""),format.raw/*549.10*/(""" """),format.raw/*549.11*/("""else """),format.raw/*549.16*/("""{"""),format.raw/*549.17*/("""
+            """),format.raw/*550.13*/("""console.log("Isn't mobile device!");
+            $(window).load(function () """),format.raw/*551.40*/("""{"""),format.raw/*551.41*/("""
+                """),format.raw/*552.17*/("""var i = 0;
                 var images = ['assets/img/soprando.jpg','assets/img/vitoria.jpg', 'assets/img/camaleao.png',
                 'assets/img/happy.jpg', 'assets/img/troncos.png', 'assets/img/camaleao.png'];
                 var image = $('.intro-header');
                 //Initial Background image setup
 
                 //Change image at regular intervals
-                setInterval(function () """),format.raw/*542.41*/("""{"""),format.raw/*542.42*/("""
-                    """),format.raw/*543.21*/("""image.fadeOut(1000, function () """),format.raw/*543.53*/("""{"""),format.raw/*543.54*/("""
-                        """),format.raw/*544.25*/("""image.css('background', 'url(' + images [i++] + ')');
+                setInterval(function () """),format.raw/*559.41*/("""{"""),format.raw/*559.42*/("""
+                    """),format.raw/*560.21*/("""image.fadeOut(1000, function () """),format.raw/*560.53*/("""{"""),format.raw/*560.54*/("""
+                        """),format.raw/*561.25*/("""image.css('background', 'url(' + images [i++] + ')');
                         image.fadeIn(1000);
-                    """),format.raw/*546.21*/("""}"""),format.raw/*546.22*/(""");
+                    """),format.raw/*563.21*/("""}"""),format.raw/*563.22*/(""");
                     if (i == images.length)
                         i = 0;
-                """),format.raw/*549.17*/("""}"""),format.raw/*549.18*/(""", 6000);
-            """),format.raw/*550.13*/("""}"""),format.raw/*550.14*/(""");
-        """),format.raw/*551.9*/("""}"""),format.raw/*551.10*/("""
+                """),format.raw/*566.17*/("""}"""),format.raw/*566.18*/(""", 6000);
+            """),format.raw/*567.13*/("""}"""),format.raw/*567.14*/(""");
+        """),format.raw/*568.9*/("""}"""),format.raw/*568.10*/("""
 
 
-    """),format.raw/*554.5*/("""}"""),format.raw/*554.6*/(""");
+    """),format.raw/*571.5*/("""}"""),format.raw/*571.6*/(""");
 </script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -600,11 +617,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sat Jun 20 13:45:20 BRT 2015
+                  DATE: Mon Jun 29 13:44:32 BRT 2015
                   SOURCE: C:/Users/Caio/Downloads/activator-1.2.10/demic/app/views/index.scala.html
-                  HASH: 74d999844164bd1500574ebf296c47e3198bd86d
-                  MATRIX: 724->1|830->19|860->23|4442->3578|4468->3595|4507->3596|4557->3618|4697->3731|4713->3738|4743->3746|5031->4015|5044->4019|5083->4020|5134->4042|6763->5639|6808->5655|20366->19184|20396->19185|20434->19195|20530->19262|20560->19263|20603->19277|20784->19428|20815->19429|20888->19472|20919->19473|20990->19516|21020->19517|21055->19524|21084->19525|21210->19622|21240->19623|21278->19633|21478->19804|21508->19805|21551->19819|21616->19855|21646->19856|21693->19874|21770->19922|21800->19923|21838->19933|21868->19934|21953->19990|21983->19991|22026->20005|22103->20054|22133->20055|22171->20065|22205->20070|22235->20071|22278->20085|22366->20145|22396->20146|22436->20158|22518->20212|22547->20213|22583->20221|22633->20242|22663->20243|22701->20253|22756->20279|22786->20280|22829->20294|22898->20334|22928->20335|22975->20353|23109->20458|23139->20459|23177->20469|23207->20470|23243->20478|23272->20479|23308->20487|23372->20522|23402->20523|23440->20533|23537->20602|23566->20603|23596->20605|23707->20687|23737->20688|23775->20698|23890->20784|23920->20785|23963->20799|24021->20829|24051->20830|24087->20838|24116->20839|24185->20879|24215->20880|24255->20892|24381->20988|24412->20989|24455->21003|24744->21263|24774->21264|24821->21282|25303->21735|25333->21736|25384->21758|25445->21790|25475->21791|25530->21817|25679->21937|25709->21938|25835->22035|25865->22036|25917->22059|25947->22060|25987->22072|26017->22073|26047->22074|26081->22079|26111->22080|26154->22094|26260->22171|26290->22172|26337->22190|26777->22601|26807->22602|26858->22624|26919->22656|26949->22657|27004->22683|27153->22803|27183->22804|27309->22901|27339->22902|27390->22924|27420->22925|27460->22937|27490->22938|27528->22948|27557->22949
-                  LINES: 26->1|29->1|31->3|120->92|120->92|120->92|121->93|122->94|122->94|122->94|127->99|127->99|127->99|128->100|148->120|150->122|481->453|481->453|482->454|483->455|483->455|484->456|485->457|485->457|485->457|485->457|486->458|486->458|487->459|487->459|491->463|491->463|492->464|495->467|495->467|496->468|496->468|496->468|497->469|498->470|498->470|499->471|499->471|501->473|501->473|502->474|503->475|503->475|504->476|504->476|504->476|505->477|506->478|506->478|508->480|510->482|510->482|512->484|512->484|512->484|513->485|513->485|513->485|514->486|514->486|514->486|515->487|517->489|517->489|518->490|518->490|519->491|519->491|521->493|521->493|521->493|522->494|524->496|524->496|525->497|529->501|529->501|530->502|531->503|531->503|532->504|533->505|533->505|534->506|534->506|536->508|536->508|538->510|538->510|538->510|539->511|543->515|543->515|544->516|551->523|551->523|552->524|552->524|552->524|553->525|555->527|555->527|558->530|558->530|559->531|559->531|560->532|560->532|560->532|560->532|560->532|561->533|562->534|562->534|563->535|570->542|570->542|571->543|571->543|571->543|572->544|574->546|574->546|577->549|577->549|578->550|578->550|579->551|579->551|582->554|582->554
+                  HASH: fc9cff504aaa77f1cf754c378c4ccdaddc5e0471
+                  MATRIX: 724->1|830->19|860->23|5897->5032|5924->5049|5964->5050|6015->5072|6156->5185|6173->5192|6204->5200|6494->5470|6508->5474|6548->5475|6599->5497|8228->7094|8273->7110|21997->20805|22027->20806|22065->20816|22161->20883|22191->20884|22234->20898|22415->21049|22446->21050|22519->21093|22550->21094|22621->21137|22651->21138|22686->21145|22715->21146|22841->21243|22871->21244|22909->21254|23109->21425|23139->21426|23182->21440|23247->21476|23277->21477|23324->21495|23401->21543|23431->21544|23469->21554|23499->21555|23584->21611|23614->21612|23657->21626|23734->21675|23764->21676|23802->21686|23836->21691|23866->21692|23909->21706|23997->21766|24027->21767|24067->21779|24149->21833|24178->21834|24214->21842|24264->21863|24294->21864|24332->21874|24387->21900|24417->21901|24460->21915|24529->21955|24559->21956|24606->21974|24740->22079|24770->22080|24808->22090|24838->22091|24874->22099|24903->22100|24939->22108|25003->22143|25033->22144|25071->22154|25168->22223|25197->22224|25227->22226|25338->22308|25368->22309|25406->22319|25521->22405|25551->22406|25594->22420|25652->22450|25682->22451|25718->22459|25747->22460|25816->22500|25846->22501|25886->22513|26012->22609|26043->22610|26086->22624|26375->22884|26405->22885|26452->22903|26934->23356|26964->23357|27015->23379|27076->23411|27106->23412|27161->23438|27310->23558|27340->23559|27466->23656|27496->23657|27548->23680|27578->23681|27618->23693|27648->23694|27678->23695|27712->23700|27742->23701|27785->23715|27891->23792|27921->23793|27968->23811|28408->24222|28438->24223|28489->24245|28550->24277|28580->24278|28635->24304|28784->24424|28814->24425|28940->24522|28970->24523|29021->24545|29051->24546|29091->24558|29121->24559|29159->24569|29188->24570
+                  LINES: 26->1|29->1|31->3|137->109|137->109|137->109|138->110|139->111|139->111|139->111|144->116|144->116|144->116|145->117|165->137|167->139|498->470|498->470|499->471|500->472|500->472|501->473|502->474|502->474|502->474|502->474|503->475|503->475|504->476|504->476|508->480|508->480|509->481|512->484|512->484|513->485|513->485|513->485|514->486|515->487|515->487|516->488|516->488|518->490|518->490|519->491|520->492|520->492|521->493|521->493|521->493|522->494|523->495|523->495|525->497|527->499|527->499|529->501|529->501|529->501|530->502|530->502|530->502|531->503|531->503|531->503|532->504|534->506|534->506|535->507|535->507|536->508|536->508|538->510|538->510|538->510|539->511|541->513|541->513|542->514|546->518|546->518|547->519|548->520|548->520|549->521|550->522|550->522|551->523|551->523|553->525|553->525|555->527|555->527|555->527|556->528|560->532|560->532|561->533|568->540|568->540|569->541|569->541|569->541|570->542|572->544|572->544|575->547|575->547|576->548|576->548|577->549|577->549|577->549|577->549|577->549|578->550|579->551|579->551|580->552|587->559|587->559|588->560|588->560|588->560|589->561|591->563|591->563|594->566|594->566|595->567|595->567|596->568|596->568|599->571|599->571
                   -- GENERATED --
               */
           

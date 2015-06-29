@@ -40,6 +40,23 @@ Seq[Any](format.raw/*1.20*/("""
 
     <title>Projeto Xarax - Projeto</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
@@ -90,7 +107,7 @@ Seq[Any](format.raw/*1.20*/("""
                     </div>
                     <button type="submit" class="btn btn-default">Sign In</button>
                 </form>-->
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right menus">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -114,15 +131,15 @@ Seq[Any](format.raw/*1.20*/("""
                     </li>
                     <li><a href="/registrar">Registrar</a></li>
                     <li class="divider-vertical"></li>
-                    """),_display_(/*89.22*/if(usuario!=null)/*89.39*/{_display_(Seq[Any](format.raw/*89.40*/("""
-                        """),format.raw/*90.25*/("""<li class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*91.95*/usuario/*91.102*/.getNome),format.raw/*91.110*/("""</a>
-                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                    """),_display_(/*106.22*/if(usuario!=null)/*106.39*/{_display_(Seq[Any](format.raw/*106.40*/("""
+                        """),format.raw/*107.25*/("""<li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*108.95*/usuario/*108.102*/.getNome),format.raw/*108.110*/("""</a>
+                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                                 <a class="btn btn-block btn-primary" href="/logout">Sair</a>
                             </div>
                         </li>
-                    """)))}/*96.22*/else/*96.26*/{_display_(Seq[Any](format.raw/*96.27*/("""
-                        """),format.raw/*97.25*/("""<li class="dropdown">
+                    """)))}/*113.22*/else/*113.26*/{_display_(Seq[Any](format.raw/*113.27*/("""
+                        """),format.raw/*114.25*/("""<li class="dropdown">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong
                             class="caret"></strong></a>
                             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -142,8 +159,8 @@ Seq[Any](format.raw/*1.20*/("""
                                 </form>
                             </div>
                         </li>
-                    """)))}),format.raw/*117.22*/("""
-                """),format.raw/*118.17*/("""</ul>
+                    """)))}),format.raw/*134.22*/("""
+                """),format.raw/*135.17*/("""</ul>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -214,7 +231,7 @@ Seq[Any](format.raw/*1.20*/("""
                                 <span class="network-name">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
+                            <a href="https://www.facebook.com/pages/Projeto-Xarax/990915060941437?fref=ts" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i>
                                 <span class="network-name">Facebook</span></a>
                         </li>
                         <li>
@@ -282,11 +299,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Jun 18 08:38:10 BRT 2015
+                  DATE: Mon Jun 29 13:45:22 BRT 2015
                   SOURCE: C:/Users/Caio/Downloads/activator-1.2.10/demic/app/views/projeto.scala.html
-                  HASH: 06202dd0db95808f2bef755e9642ea55fbdb0f90
-                  MATRIX: 726->1|832->19|860->21|4606->3740|4632->3757|4671->3758|4725->3784|4869->3901|4886->3908|4916->3916|5224->4205|5237->4209|5276->4210|5330->4236|7039->5913|7086->5931
-                  LINES: 26->1|29->1|30->2|117->89|117->89|117->89|118->90|119->91|119->91|119->91|124->96|124->96|124->96|125->97|145->117|146->118
+                  HASH: 72304ca98911558b0d474c1dae1bfeebdcda7172
+                  MATRIX: 726->1|832->19|860->21|6061->5194|6088->5211|6128->5212|6183->5238|6328->5355|6346->5362|6377->5370|6687->5660|6701->5664|6741->5665|6796->5691|8505->7368|8552->7386
+                  LINES: 26->1|29->1|30->2|134->106|134->106|134->106|135->107|136->108|136->108|136->108|141->113|141->113|141->113|142->114|162->134|163->135
                   -- GENERATED --
               */
           

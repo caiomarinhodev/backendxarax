@@ -40,6 +40,23 @@ Seq[Any](format.raw/*1.36*/("""
 
     <title>Projeto Xarax - Contato</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
@@ -114,15 +131,15 @@ Seq[Any](format.raw/*1.36*/("""
                     </li>
                     <li><a href="/registrar">Registrar</a></li>
                     <li class="divider-vertical"></li>
-                    """),_display_(/*89.22*/if(usuario!=null)/*89.39*/{_display_(Seq[Any](format.raw/*89.40*/("""
-                        """),format.raw/*90.25*/("""<li class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*91.95*/usuario/*91.102*/.getNome),format.raw/*91.110*/("""</a>
-                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                    """),_display_(/*106.22*/if(usuario!=null)/*106.39*/{_display_(Seq[Any](format.raw/*106.40*/("""
+                        """),format.raw/*107.25*/("""<li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*108.95*/usuario/*108.102*/.getNome),format.raw/*108.110*/("""</a>
+                            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                                 <a class="btn btn-block btn-primary" href="/logout">Sair</a>
                             </div>
                         </li>
-                    """)))}/*96.22*/else/*96.26*/{_display_(Seq[Any](format.raw/*96.27*/("""
-                        """),format.raw/*97.25*/("""<li class="dropdown">
+                    """)))}/*113.22*/else/*113.26*/{_display_(Seq[Any](format.raw/*113.27*/("""
+                        """),format.raw/*114.25*/("""<li class="dropdown">
                             <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong
                             class="caret"></strong></a>
                             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -142,8 +159,8 @@ Seq[Any](format.raw/*1.36*/("""
                                 </form>
                             </div>
                         </li>
-                    """)))}),format.raw/*117.22*/("""
-                """),format.raw/*118.17*/("""</ul>
+                    """)))}),format.raw/*134.22*/("""
+                """),format.raw/*135.17*/("""</ul>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -158,7 +175,7 @@ Seq[Any](format.raw/*1.36*/("""
         <div class="container">
 
 
-            <input type="hidden" name="variavel" id="variavel" value="""),_display_(/*133.71*/value),format.raw/*133.76*/(""">
+            <input type="hidden" name="variavel" id="variavel" value="""),_display_(/*150.71*/value),format.raw/*150.76*/(""">
 
                 <!-- Modal -->
             <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -271,12 +288,12 @@ Seq[Any](format.raw/*1.36*/("""
     <script src="/assets/js/bootstrap.min.js"></script>
 
     <script>
-        $(document ).ready(function()"""),format.raw/*246.38*/("""{"""),format.raw/*246.39*/("""
-            """),format.raw/*247.13*/("""var v = $('#variavel' ).val();
-            if(v==1)"""),format.raw/*248.21*/("""{"""),format.raw/*248.22*/("""
-                """),format.raw/*249.17*/("""$("#myModal").modal('show');
-            """),format.raw/*250.13*/("""}"""),format.raw/*250.14*/("""
-        """),format.raw/*251.9*/("""}"""),format.raw/*251.10*/(""");
+        $(document ).ready(function()"""),format.raw/*263.38*/("""{"""),format.raw/*263.39*/("""
+            """),format.raw/*264.13*/("""var v = $('#variavel' ).val();
+            if(v==1)"""),format.raw/*265.21*/("""{"""),format.raw/*265.22*/("""
+                """),format.raw/*266.17*/("""$("#myModal").modal('show');
+            """),format.raw/*267.13*/("""}"""),format.raw/*267.14*/("""
+        """),format.raw/*268.9*/("""}"""),format.raw/*268.10*/(""");
     </script>
 
 
@@ -295,11 +312,11 @@ Seq[Any](format.raw/*1.36*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Jun 18 09:19:51 BRT 2015
+                  DATE: Mon Jun 29 13:45:22 BRT 2015
                   SOURCE: C:/Users/Caio/Downloads/activator-1.2.10/demic/app/views/contato.scala.html
-                  HASH: 45849ed29049fea949cb2c1b83ac0e995ea43991
-                  MATRIX: 734->1|856->35|884->37|4630->3756|4656->3773|4695->3774|4749->3800|4893->3917|4910->3924|4940->3932|5248->4221|5261->4225|5300->4226|5354->4252|7063->5929|7110->5947|7534->6343|7561->6348|12943->11701|12973->11702|13016->11716|13097->11768|13127->11769|13174->11787|13245->11829|13275->11830|13313->11840|13343->11841
-                  LINES: 26->1|29->1|30->2|117->89|117->89|117->89|118->90|119->91|119->91|119->91|124->96|124->96|124->96|125->97|145->117|146->118|161->133|161->133|274->246|274->246|275->247|276->248|276->248|277->249|278->250|278->250|279->251|279->251
+                  HASH: ad882f1c591b0978690114c4cb5be611e6e88dc9
+                  MATRIX: 734->1|856->35|884->37|6079->5204|6106->5221|6146->5222|6201->5248|6346->5365|6364->5372|6395->5380|6705->5670|6719->5674|6759->5675|6814->5701|8523->7378|8570->7396|8994->7792|9021->7797|14403->13150|14433->13151|14476->13165|14557->13217|14587->13218|14634->13236|14705->13278|14735->13279|14773->13289|14803->13290
+                  LINES: 26->1|29->1|30->2|134->106|134->106|134->106|135->107|136->108|136->108|136->108|141->113|141->113|141->113|142->114|162->134|163->135|178->150|178->150|291->263|291->263|292->264|293->265|293->265|294->266|295->267|295->267|296->268|296->268
                   -- GENERATED --
               */
           

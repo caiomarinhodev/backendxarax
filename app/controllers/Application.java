@@ -98,6 +98,13 @@ public class Application extends Controller {
         return index();
     }
 
+
+    @Transactional
+    public static Result removeUsuario(Long id){
+        SGDB.removeUsuario(id);
+        return renderAdmin();
+    }
+
     @Transactional
     public static Result renderAdmin(){
         String str = session().get("email");

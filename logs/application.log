@@ -1,288 +1,690 @@
-2015-06-27 10:38:51,186 - [INFO] - from play in pool-4-thread-1 
+2015-06-29 12:57:41,008 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-06-27 10:40:02,174 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 12:59:03,128 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:40:04,607 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 12:59:04,128 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:40:12,241 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 12:59:12,094 - [INFO] - from application in play-internal-execution-context-1 
 inicializada...
 
-2015-06-27 10:40:13,109 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 12:59:12,922 - [INFO] - from application in play-internal-execution-context-1 
 Inserindo dados no BD.
 
-2015-06-27 10:40:13,132 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 12:59:12,985 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-06-27 10:42:34,230 - [ERROR] - from play in play-akka.actor.default-dispatcher-25 
-Cannot invoke the action, eventually got an error: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-
-2015-06-27 10:42:34,333 - [ERROR] - from application in play-akka.actor.default-dispatcher-25 
-
-
-! @6mifpc4dk - Internal server error, for (GET) [/mural] ->
-
-play.api.Application$$anon$1: Execution exception[[IndexOutOfBoundsException: Index: 1, Size: 1]]
-	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
-	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
-	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.9.jar:2.3.9]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.6.jar:na]
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.6.jar:na]
-	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
-	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
-Caused by: java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
-	at java.util.ArrayList.rangeCheck(ArrayList.java:635) ~[na:1.7.0_65]
-	at java.util.ArrayList.get(ArrayList.java:411) ~[na:1.7.0_65]
-	at views.html.mural$$anonfun$apply$2.apply(mural.template.scala:372) ~[classes/:na]
-	at views.html.mural$$anonfun$apply$2.apply(mural.template.scala:353) ~[classes/:na]
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.Iterator$class.foreach(Iterator.scala:750) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
-	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[scala-library-2.11.6.jar:na]
-	at views.html.mural$.apply(mural.template.scala:353) ~[classes/:na]
-	at views.html.mural$.render(mural.template.scala:438) ~[classes/:na]
-	at views.html.mural.render(mural.template.scala) ~[classes/:na]
-	at controllers.Application.renderMural(Application.java:126) ~[classes/:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:235) ~[classes/:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(routes_routing.scala:235) ~[classes/:na]
-	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.GlobalSettings$1.call(GlobalSettings.java:67) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:23) ~[play-java-jpa_2.11-2.3.9.jar:2.3.9]
-	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:21) ~[play-java-jpa_2.11-2.3.9.jar:2.3.9]
-	at play.db.jpa.JPA.withTransactionAsync(JPA.java:180) ~[play-java-jpa_2.11-2.3.9.jar:2.3.9]
-	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:18) ~[play-java-jpa_2.11-2.3.9.jar:2.3.9]
-	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
-	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.9.jar:2.3.9]
-	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.6.jar:na]
-	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.6.jar:na]
-	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
-	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
-	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
-	... 6 common frames omitted
-
-2015-06-27 10:43:40,540 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:01:58,476 - [INFO] - from application in play-internal-execution-context-1 
 desligada...
 
-2015-06-27 10:43:40,778 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:01:58,883 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:43:40,780 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:01:58,885 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:43:40,938 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:01:59,193 - [INFO] - from application in play-internal-execution-context-1 
 inicializada...
 
-2015-06-27 10:43:40,944 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:01:59,211 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-06-27 10:45:26,683 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:04,382 - [INFO] - from application in play-internal-execution-context-1 
 desligada...
 
-2015-06-27 10:45:26,756 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:04,466 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:45:26,757 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:04,472 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:45:26,895 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:04,649 - [INFO] - from application in play-internal-execution-context-1 
 inicializada...
 
-2015-06-27 10:45:26,899 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:04,655 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-06-27 10:46:26,995 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:27,623 - [INFO] - from application in play-internal-execution-context-1 
 desligada...
 
-2015-06-27 10:46:27,057 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:27,706 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:46:27,059 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:27,712 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:46:27,208 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:27,959 - [INFO] - from application in play-internal-execution-context-1 
 inicializada...
 
-2015-06-27 10:46:27,215 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:27,969 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-06-27 10:50:27,816 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:46,127 - [INFO] - from application in play-internal-execution-context-1 
 desligada...
 
-2015-06-27 10:50:27,881 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:46,194 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:50:27,883 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:46,199 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:50:28,042 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:03:46,359 - [INFO] - from application in play-internal-execution-context-1 
 inicializada...
 
-2015-06-27 10:50:28,047 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:03:46,370 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2015-06-27 10:52:29,229 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:04:07,712 - [INFO] - from application in play-internal-execution-context-6 
 desligada...
 
-2015-06-27 10:52:29,295 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:04:07,777 - [INFO] - from play in play-internal-execution-context-6 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:52:29,297 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:04:07,780 - [INFO] - from play in play-internal-execution-context-6 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:52:29,464 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:04:07,991 - [INFO] - from application in play-internal-execution-context-6 
 inicializada...
 
-2015-06-27 10:52:29,473 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:04:08,007 - [INFO] - from play in play-internal-execution-context-6 
 Application started (Dev)
 
-2015-06-27 10:53:26,296 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:08:06,557 - [INFO] - from application in play-internal-execution-context-6 
 desligada...
 
-2015-06-27 10:53:26,375 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:08:06,666 - [INFO] - from play in play-internal-execution-context-6 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:53:26,377 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:08:06,671 - [INFO] - from play in play-internal-execution-context-6 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:53:26,623 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:08:06,839 - [INFO] - from application in play-internal-execution-context-6 
 inicializada...
 
-2015-06-27 10:53:26,630 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:08:06,850 - [INFO] - from play in play-internal-execution-context-6 
 Application started (Dev)
 
-2015-06-27 10:55:30,496 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:11:25,730 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj573nnm - Internal server error, for (GET) [/assets/img/vitoria.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:11:35,509 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj574cbl - Internal server error, for (GET) [/assets/img/happy.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:11:41,237 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj574ko2 - Internal server error, for (GET) [/assets/img/troncos.png] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:11:53,521 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj575d22 - Internal server error, for (GET) [/assets/img/soprando.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:01,467 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj575om6 - Internal server error, for (GET) [/assets/img/vitoria.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:11,215 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj576d74 - Internal server error, for (GET) [/assets/img/happy.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:16,866 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj576lgd - Internal server error, for (GET) [/assets/img/troncos.png] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:29,062 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj577dhf - Internal server error, for (GET) [/assets/img/soprando.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:36,028 - [ERROR] - from application in New I/O worker #8 
+
+
+! @6mj577npd - Internal server error, for (GET) [/assets/img/vitoria.jpg] ->
+
+play.PlayExceptions$CompilationException: Compilation error[value removeUsuario is not a member of object controllers.Application]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:62) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+
+2015-06-29 13:12:53,315 - [INFO] - from application in play-internal-execution-context-9 
 desligada...
 
-2015-06-27 10:55:30,548 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:12:53,383 - [INFO] - from play in play-internal-execution-context-9 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:55:30,550 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:12:53,387 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:55:30,670 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:12:53,549 - [INFO] - from application in play-internal-execution-context-9 
 inicializada...
 
-2015-06-27 10:55:30,674 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:12:53,555 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2015-06-27 10:55:46,185 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:13:30,628 - [INFO] - from application in play-internal-execution-context-9 
 desligada...
 
-2015-06-27 10:55:46,237 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:30,664 - [INFO] - from play in play-internal-execution-context-9 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:55:46,240 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:30,668 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:55:46,381 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:13:30,776 - [INFO] - from application in play-internal-execution-context-9 
 inicializada...
 
-2015-06-27 10:55:46,386 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:30,783 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2015-06-27 10:56:16,862 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:13:44,143 - [INFO] - from application in play-internal-execution-context-9 
 desligada...
 
-2015-06-27 10:56:16,917 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:44,202 - [INFO] - from play in play-internal-execution-context-9 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:56:16,919 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:44,206 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:56:17,025 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:13:44,398 - [INFO] - from application in play-internal-execution-context-9 
 inicializada...
 
-2015-06-27 10:56:17,031 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:13:44,404 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2015-06-27 10:56:49,202 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:14:12,045 - [INFO] - from application in play-internal-execution-context-9 
 desligada...
 
-2015-06-27 10:56:49,253 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:12,091 - [INFO] - from play in play-internal-execution-context-9 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:56:49,256 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:12,093 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:56:49,374 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:14:12,200 - [INFO] - from application in play-internal-execution-context-9 
 inicializada...
 
-2015-06-27 10:56:49,378 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:12,205 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2015-06-27 10:57:16,593 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:14:28,323 - [INFO] - from application in play-internal-execution-context-9 
 desligada...
 
-2015-06-27 10:57:16,647 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:28,367 - [INFO] - from play in play-internal-execution-context-9 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:57:16,650 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:28,369 - [INFO] - from play in play-internal-execution-context-9 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:57:16,790 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:14:28,482 - [INFO] - from application in play-internal-execution-context-9 
 inicializada...
 
-2015-06-27 10:57:16,794 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:14:28,487 - [INFO] - from play in play-internal-execution-context-9 
 Application started (Dev)
 
-2015-06-27 10:57:54,404 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:18:47,281 - [INFO] - from application in play-internal-execution-context-14 
 desligada...
 
-2015-06-27 10:57:54,470 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:18:47,515 - [INFO] - from play in play-internal-execution-context-14 
 datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
 
-2015-06-27 10:57:54,472 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:18:47,534 - [INFO] - from play in play-internal-execution-context-14 
 database [default] connected at jdbc:h2:mem:play
 
-2015-06-27 10:57:54,594 - [INFO] - from application in play-internal-execution-context-1 
+2015-06-29 13:18:48,215 - [INFO] - from application in play-internal-execution-context-14 
 inicializada...
 
-2015-06-27 10:57:54,599 - [INFO] - from play in play-internal-execution-context-1 
+2015-06-29 13:18:48,222 - [INFO] - from play in play-internal-execution-context-14 
 Application started (Dev)
 
-2015-06-27 11:00:03,484 - [INFO] - from application in pool-4-thread-1 
+2015-06-29 13:19:04,033 - [INFO] - from application in play-internal-execution-context-14 
+desligada...
+
+2015-06-29 13:19:04,067 - [INFO] - from play in play-internal-execution-context-14 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:19:04,068 - [INFO] - from play in play-internal-execution-context-14 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:19:04,152 - [INFO] - from application in play-internal-execution-context-14 
+inicializada...
+
+2015-06-29 13:19:04,156 - [INFO] - from play in play-internal-execution-context-14 
+Application started (Dev)
+
+2015-06-29 13:19:23,625 - [INFO] - from application in play-internal-execution-context-14 
+desligada...
+
+2015-06-29 13:19:23,679 - [INFO] - from play in play-internal-execution-context-14 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:19:23,681 - [INFO] - from play in play-internal-execution-context-14 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:19:23,765 - [INFO] - from application in play-internal-execution-context-14 
+inicializada...
+
+2015-06-29 13:19:23,768 - [INFO] - from play in play-internal-execution-context-14 
+Application started (Dev)
+
+2015-06-29 13:19:58,614 - [INFO] - from application in play-internal-execution-context-14 
+desligada...
+
+2015-06-29 13:19:58,662 - [INFO] - from play in play-internal-execution-context-14 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:19:58,666 - [INFO] - from play in play-internal-execution-context-14 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:19:58,776 - [INFO] - from application in play-internal-execution-context-14 
+inicializada...
+
+2015-06-29 13:19:58,785 - [INFO] - from play in play-internal-execution-context-14 
+Application started (Dev)
+
+2015-06-29 13:21:38,168 - [INFO] - from application in play-internal-execution-context-19 
+desligada...
+
+2015-06-29 13:21:38,212 - [INFO] - from play in play-internal-execution-context-19 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:21:38,215 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:21:38,325 - [INFO] - from application in play-internal-execution-context-19 
+inicializada...
+
+2015-06-29 13:21:38,330 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2015-06-29 13:28:18,455 - [INFO] - from application in play-internal-execution-context-19 
+desligada...
+
+2015-06-29 13:28:18,808 - [INFO] - from play in play-internal-execution-context-19 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:28:18,810 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:28:19,639 - [INFO] - from application in play-internal-execution-context-19 
+inicializada...
+
+2015-06-29 13:28:19,643 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2015-06-29 13:30:48,341 - [INFO] - from application in play-internal-execution-context-19 
+desligada...
+
+2015-06-29 13:30:48,385 - [INFO] - from play in play-internal-execution-context-19 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:30:48,400 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:30:48,520 - [INFO] - from application in play-internal-execution-context-19 
+inicializada...
+
+2015-06-29 13:30:48,524 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2015-06-29 13:32:29,232 - [INFO] - from application in play-internal-execution-context-19 
+desligada...
+
+2015-06-29 13:32:29,275 - [INFO] - from play in play-internal-execution-context-19 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:32:29,277 - [INFO] - from play in play-internal-execution-context-19 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:32:29,441 - [INFO] - from application in play-internal-execution-context-19 
+inicializada...
+
+2015-06-29 13:32:29,445 - [INFO] - from play in play-internal-execution-context-19 
+Application started (Dev)
+
+2015-06-29 13:38:29,952 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:38:30,036 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:38:30,041 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:38:30,124 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:38:30,131 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:41:35,474 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:41:35,560 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:41:35,563 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:41:35,705 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:41:35,710 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:43:04,151 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:43:04,225 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:43:04,228 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:43:04,406 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:43:04,412 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:43:26,257 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:43:26,292 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:43:26,295 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:43:26,369 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:43:26,374 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:43:48,662 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:43:48,751 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:43:48,759 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:43:49,145 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:43:49,182 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:44:34,583 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:44:34,639 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:44:34,641 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:44:34,761 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:44:34,770 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:45:25,124 - [INFO] - from application in play-internal-execution-context-29 
+desligada...
+
+2015-06-29 13:45:25,158 - [INFO] - from play in play-internal-execution-context-29 
+datasource [jdbc:h2:mem:play;DB_CLOSE_DELAY=-1] bound to JNDI as DefaultDS
+
+2015-06-29 13:45:25,160 - [INFO] - from play in play-internal-execution-context-29 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-29 13:45:25,264 - [INFO] - from application in play-internal-execution-context-29 
+inicializada...
+
+2015-06-29 13:45:25,332 - [INFO] - from play in play-internal-execution-context-29 
+Application started (Dev)
+
+2015-06-29 13:45:49,686 - [INFO] - from application in pool-4-thread-1 
 desligada...
 

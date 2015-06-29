@@ -40,6 +40,23 @@ Seq[Any](format.raw/*1.20*/("""
 
     <title>Projeto Xarax - Quem Somos</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/bootstrap-social.css" rel="stylesheet">
@@ -114,15 +131,15 @@ Seq[Any](format.raw/*1.20*/("""
                     </li>
                     <li><a href="/registrar">Registrar</a></li>
                     <li class="divider-vertical"></li>
-                    """),_display_(/*89.22*/if(usuario!=null)/*89.39*/{_display_(Seq[Any](format.raw/*89.40*/("""
-                    """),format.raw/*90.21*/("""<li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*91.91*/usuario/*91.98*/.getNome),format.raw/*91.106*/("""</a>
-                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+                    """),_display_(/*106.22*/if(usuario!=null)/*106.39*/{_display_(Seq[Any](format.raw/*106.40*/("""
+                    """),format.raw/*107.21*/("""<li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown"> Olá, """),_display_(/*108.91*/usuario/*108.98*/.getNome),format.raw/*108.106*/("""</a>
+                        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
                             <a class="btn btn-block btn-primary" href="/logout">Sair</a>
                         </div>
                     </li>
-                    """)))}/*96.22*/else/*96.26*/{_display_(Seq[Any](format.raw/*96.27*/("""
-                    """),format.raw/*97.21*/("""<li class="dropdown">
+                    """)))}/*113.22*/else/*113.26*/{_display_(Seq[Any](format.raw/*113.27*/("""
+                    """),format.raw/*114.21*/("""<li class="dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown">Entrar <strong
                                 class="caret"></strong></a>
                         <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
@@ -142,8 +159,8 @@ Seq[Any](format.raw/*1.20*/("""
                             </form>
                         </div>
                     </li>
-                    """)))}),format.raw/*117.22*/("""
-                """),format.raw/*118.17*/("""</ul>
+                    """)))}),format.raw/*134.22*/("""
+                """),format.raw/*135.17*/("""</ul>
 
             </div>
             <!-- /.navbar-collapse -->
@@ -216,7 +233,7 @@ Seq[Any](format.raw/*1.20*/("""
                     </h2>
                 </div>
                 <div class="col-lg-3">
-                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-plus fa-fw"></i>
+                    <a href="/registrar" class="btn btn-default btn-lg"><i class="fa fa-plus fa-fw"></i>
                         <span class="network-name">Participar</span></a>
                 </div>
             </div>
@@ -277,11 +294,11 @@ Seq[Any](format.raw/*1.20*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu Jun 18 08:38:10 BRT 2015
+                  DATE: Mon Jun 29 13:45:22 BRT 2015
                   SOURCE: C:/Users/Caio/Downloads/activator-1.2.10/demic/app/views/quemsomos.scala.html
-                  HASH: 0c20ec4038cd01a27b5d273dc294d47492b43d0f
-                  MATRIX: 728->1|834->19|862->21|4611->3743|4637->3760|4676->3761|4726->3783|4866->3896|4882->3903|4912->3911|5204->4184|5217->4188|5256->4189|5306->4211|6961->5834|7008->5852
-                  LINES: 26->1|29->1|30->2|117->89|117->89|117->89|118->90|119->91|119->91|119->91|124->96|124->96|124->96|125->97|145->117|146->118
+                  HASH: 24f03221450964f294a6718bfd12bf775fb8c391
+                  MATRIX: 728->1|834->19|862->21|6060->5191|6087->5208|6127->5209|6178->5231|6319->5344|6336->5351|6367->5359|6661->5633|6675->5637|6715->5638|6766->5660|8421->7283|8468->7301
+                  LINES: 26->1|29->1|30->2|134->106|134->106|134->106|135->107|136->108|136->108|136->108|141->113|141->113|141->113|142->114|162->134|163->135
                   -- GENERATED --
               */
           

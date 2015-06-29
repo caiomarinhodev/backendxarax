@@ -12,6 +12,23 @@
 
     <title>Painel de Controle - Xarax</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap Core CSS -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -47,9 +64,33 @@
                 <a class="navbar-brand" href="index.scala.html">Painel de Controle</a>
             </div>
             <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
+            <ul class="nav navbar-nav side-nav">
+                <center><h3>Usuários</h3></center>
+                <hr/>
+                @for(us <- SGDB.getAllUsers){
+                    <li>
+                        <a href="#">
+                        @if(us.isColaborador){
+                            <i class="fa fa-dollar"></i>
+                            <span>
+                                    &nbsp;@us.getNome @us.getSobrenome &nbsp;
+                                <form method="get" action="/remove/usuario/@us.getId">
+                                    <button class="fa fa-trash-o"></button>
+                                </form>
+                            </span>
 
-            </ul>
+                        }else{
+                            <span>&nbsp;@us.getNome @us.getSobrenome &nbsp;
+                                <img src="@SGDB.getNacionalidade(us.getNacionalidade).getPic"/>
+                                <form method="get" action="/remove/usuario/@us.getId">
+                                    <button class="fa fa-trash-o"></button>
+                                </form>
+                            </span>
+                        }
+                        </a>
+                    </li>
+                }
+                </ul>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
 
@@ -163,12 +204,12 @@
                         <form method="post" action="/addpost">
                             <div class="modal-body">
                                 <div class="form-group">
-                                    <label class="form-control">Titulo:</label>
+                                    <label>Titulo:</label>
                                     <input class="form-control" name="titulo" required>
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-control">Texto:</label>
-                                    <textarea class="form-control" name="postagem"></textarea>
+                                    <label>Texto:</label>
+                                    <textarea class="form-control" name="postagem" rows="4"></textarea>
                                 </div>
                             </div>
                             <div class="modal-footer">
